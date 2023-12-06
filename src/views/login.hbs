@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tu mundo soñado de diversión">
+    <meta name="keywords" content="entretenimiento, peliculas, juegos, juegos gratis, moda">
+    <title>trippy Ind</title>
+    <link rel="shortcut icon" href="/src/img/trippy.jpg" type="image/X-icon">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<h1>
+<marquee behavior="alternate" direction="left">INICIAR SESIÓN</marquee>
+</h1>
+
+<p>{{message}}</p>
+<p>{{error}}</p>
+
+<form method="post" action="/api/sessions/login">
+    <input type="email" name="email" placeholder="Correo electrónico">
+    <input type="password" name="password" placeholder="Contraseña">
+    <button>INICIAR SESIÓN</button>
+</form>
+</body>
+</html>
